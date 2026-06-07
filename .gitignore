@@ -1,3 +1,10 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# Baza danych SQLite generowana w trakcie dzialania
+data/
+
 # Compiled class file
 *.class
 
