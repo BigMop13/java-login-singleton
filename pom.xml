@@ -19,7 +19,6 @@
     </properties>
 
     <dependencies>
-        <!-- Sterownik JDBC do bazy SQLite -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
@@ -30,7 +29,6 @@
     <build>
         <finalName>login-singleton</finalName>
         <plugins>
-            <!-- Uruchamianie z poziomu Mavena: mvn exec:java -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -40,7 +38,6 @@
                 </configuration>
             </plugin>
 
-            <!-- Budowa "fat jar" ze sterownikiem w srodku: mvn package -> java -jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
